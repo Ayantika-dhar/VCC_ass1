@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 
 const app = express();
-app.use(express.json()); // Middleware to parse JSON
+app.use(express.json()); 
 
 // MongoDB Connection
-const mongoURI = 'mongodb://localhost:27017/testdb';  // Connecting to your local MongoDB
+const mongoURI = 'mongodb://localhost:27017/testdb';  
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
