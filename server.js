@@ -6,7 +6,9 @@ const app = express();
 app.use(express.json()); 
 
 // MongoDB Connection
-const mongoURI = 'mongodb://localhost:27017/testdb';  
+
+const mongoURI = 'mongodb://10.0.2.5:27017/testdb';  
+
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
