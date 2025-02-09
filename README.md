@@ -84,7 +84,7 @@ node XYZ.js  # Replace XYZ with your actual .js file name
 ```sh
 node server.js &  # To run Node.js server in background
 curl http://localhost:5000/  # To check if API is running
-curl -X POST http://localhost:5000/add -H "Content-Type: application/json" -d '{"text": "Type any message"}'  # POST request to add a message
+curl POST http://localhost:5000/add -H "Content-Type: application/json" -d '{"text": "Type any message"}'  # POST request to add a message
 curl http://localhost:5000/messages  # GET request to show messages
 ```
 
