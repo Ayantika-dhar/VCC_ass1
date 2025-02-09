@@ -1,9 +1,10 @@
-#**This project demonstrates the deployment of a microservice-based architecture using VirtualBox NAT Network for communication between two VMs:**
+#This project demonstrates the deployment of a microservice-based architecture using VirtualBox NAT Network for communication between two VMs:
 
 VM1: Hosts a Node.js API microservice that handles API requests.
 VM2: Runs MongoDB in a Docker container to store and retrieve data.
 
 ##Project Architecture
+
 VM1 (Node.js Microservice - API Server): Handles HTTP requests and interacts with MongoDB.
 VM2 (MongoDB Database - Docker Container): Stores messages and processes API queries.
 NAT Network in VirtualBox: Ensures communication between VMs.
@@ -13,6 +14,7 @@ Clients: API requests can be made from VM1, VM2, or an external system.
 
 
 ##Virtual Machine Setup (VirtualBox)
+
 Download Virtualbox
 Doenload UbuntuServer iso file in local machine
 Create Two Ubuntu Server VMs:
@@ -25,9 +27,11 @@ VM1 configuration:
 VM2 configuration: same as VM1
 
 ##check whether the VMs can connect to the internet:
+
 ping google.com
 
 ##check whether the two VMs can connect to each other:
+
 1. ip a //to know the ip addresses of respective VMs
 2. ping <VM2_IP> //from vm1
 3. ping <VM1_IP> //from vm2
